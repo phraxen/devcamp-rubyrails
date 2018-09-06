@@ -55,3 +55,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'activerecord-session_store'
+
+# https://github.com/norman/friendly_id
+gem 'friendly_id', '~> 5.2.0'
