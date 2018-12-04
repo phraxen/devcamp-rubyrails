@@ -58,3 +58,5 @@ gem 'activerecord-session_store'
 
 # https://github.com/norman/friendly_id
 gem 'friendly_id', '~> 5.2.0'
+
+gem 'devise', '~> 4.5'
