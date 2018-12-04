@@ -7,4 +7,19 @@ class User < ApplicationRecord
   # :omniauthable - integrate 3rd party logins (e.g. Facebook, Google, etc.)
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+  validates_presence_of :name
+
+  def first_name
+    self.name.split.first # self is redundant
+  end
+
+  def last_name
+    name_split = self.name.split
+    if name_split.count > 1
+      name_split.last
+    else
+      '<mononymous person>'
+    end
+  end
 end
