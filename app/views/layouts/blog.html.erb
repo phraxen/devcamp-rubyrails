@@ -15,9 +15,9 @@
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-<%= render 'shared/nav' %>
-
 <%= yield %>
+
+<%= render 'shared/nav', location: 'bottom' %>
 
 <% if session[:source] %>
   Thanks for stopping by from <%= session[:source] %>
