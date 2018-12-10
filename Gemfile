@@ -61,3 +61,6 @@ gem 'activerecord-session_store'
 gem 'friendly_id', '~> 5.2.0'
 
 gem 'devise', '~> 4.5'
+
+gem 'jquery-rails'
+gem 'bootstrap', '~> 4.1.3'

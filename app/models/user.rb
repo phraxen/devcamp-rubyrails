@@ -15,7 +15,7 @@ class User < ApplicationRecord
   end
 
   def last_name
-    name_split = self.name.split
+    name_split = name.split
     if name_split.count > 1
       name_split.last
     else
