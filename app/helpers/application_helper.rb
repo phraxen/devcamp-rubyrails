@@ -14,4 +14,10 @@ module ApplicationHelper
       content_tag(:p, greeting, class: 'source-greeting')
     end
   end
+
+  def copyright_generator
+    PhexViewTool::Renderer.copyright 'Philip Baumann',
+                                     'All rights reserved.',
+                                     2018
+  end
 end

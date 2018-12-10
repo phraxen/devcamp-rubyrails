@@ -64,3 +64,5 @@ gem 'devise', '~> 4.5'
 
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.1.3'
+
+gem 'phex_view_tool', git: 'https://github.com/phraxen/phex_view_tool'
