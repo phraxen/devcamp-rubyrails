@@ -16,13 +16,7 @@
 
   <body>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">phex</h3>
-
-          <%= render 'shared/nav', location: 'top' %>
-        </div>
-      </header>
+      <%= render 'shared/application_header', location: 'top' %>
 
       <main role="main" class="inner cover">
         <h1 class="cover-heading">Philip Baumann</h1>
@@ -34,15 +28,10 @@
 
       <footer class="mastfoot mt-auto">
         <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
           <p><%= copyright_generator %></p>
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
       </footer>
     </div>
-
-<!--    <p class="notice"><%#= notice %></p>-->
-<!--    <p class="alert"><%#= alert %></p>-->
-
-    <%#= source_helper('application') %>
   </body>
 </html>
