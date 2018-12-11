@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content=""width="device-width, initial-scale=1, shrink-to-fit=no" />
+
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,15 +15,34 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">phex</h3>
 
-    <%= render 'shared/nav', location: 'top' %>
+          <%= render 'shared/nav', location: 'top' %>
+        </div>
+      </header>
 
-    <%= yield %>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Philip Baumann</h1>
+        <p class="lead">Welcome to my simple portfolio. Allow me to give you a (hopefully) brief overview of my skillset.</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+      </main>
 
-    <%= copyright_generator %>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+          <p><%= copyright_generator %></p>
+        </div>
+      </footer>
+    </div>
 
-    <%= source_helper('application') %>
+<!--    <p class="notice"><%#= notice %></p>-->
+<!--    <p class="alert"><%#= alert %></p>-->
+
+    <%#= source_helper('application') %>
   </body>
 </html>
